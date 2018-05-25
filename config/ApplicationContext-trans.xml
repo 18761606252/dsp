@@ -33,7 +33,7 @@ http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
 	<!-- 切面 -->
 	<aop:config>
 		<aop:advisor advice-ref="txAdvice"
-			pointcut="execution(* cn.itheima.service.*.*(..))" />
+			pointcut="execution(* nuist.service.*.*(..))" />
 	</aop:config>
 	
 </beans>

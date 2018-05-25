@@ -1,4 +1,4 @@
-package cn.itheima.service;
+package nuist.service;
 
 import java.io.InputStream;
 import java.math.BigInteger;
@@ -7,9 +7,9 @@ import java.util.List;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.web.multipart.MultipartFile;
 
-import cn.itheima.pojo.BaseDict;
-import cn.itheima.pojo.QueryVo;
-import cn.itheima.pojo.Temperature;
+import nuist.pojo.BaseDict;
+import nuist.pojo.QueryVo;
+import nuist.pojo.Temperature;
 
 
 public interface CustomerService {

@@ -1,4 +1,4 @@
-package cn.itheima.controller;
+package nuist.controller;
 
 import java.io.BufferedOutputStream;
 import java.io.IOException;
@@ -26,10 +26,10 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 
 import cn.itcast.utils.Page;
-import cn.itheima.pojo.BaseDict;
-import cn.itheima.pojo.QueryVo;
-import cn.itheima.pojo.Temperature;
-import cn.itheima.service.CustomerService;
+import nuist.pojo.BaseDict;
+import nuist.pojo.QueryVo;
+import nuist.pojo.Temperature;
+import nuist.service.CustomerService;
 
 @Controller
 @RequestMapping("/customer")

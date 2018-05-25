@@ -1,8 +1,8 @@
-package cn.itheima.dao;
+package nuist.dao;
 
 import java.util.List;
 
-import cn.itheima.pojo.BaseDict;
+import nuist.pojo.BaseDict;
 
 public interface DictMapper {
 

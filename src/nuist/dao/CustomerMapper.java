@@ -1,9 +1,9 @@
-package cn.itheima.dao;
+package nuist.dao;
 
 import java.util.List;
 
-import cn.itheima.pojo.Customer;
-import cn.itheima.pojo.QueryVo;
+import nuist.pojo.Customer;
+import nuist.pojo.QueryVo;
 
 public interface CustomerMapper {
 

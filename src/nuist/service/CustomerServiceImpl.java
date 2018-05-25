@@ -1,4 +1,4 @@
-package cn.itheima.service;
+package nuist.service;
 
 import java.beans.IntrospectionException;
 import java.io.InputStream;
@@ -16,13 +16,13 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
 
-import cn.itheima.dao.DictMapper;
-import cn.itheima.dao.TemperatureMapper;
-import cn.itheima.pojo.BaseDict;
-import cn.itheima.pojo.ExcelBean;
-import cn.itheima.pojo.ExcelUtil;
-import cn.itheima.pojo.QueryVo;
-import cn.itheima.pojo.Temperature;
+import nuist.dao.DictMapper;
+import nuist.dao.TemperatureMapper;
+import nuist.pojo.BaseDict;
+import nuist.pojo.ExcelBean;
+import nuist.pojo.ExcelUtil;
+import nuist.pojo.QueryVo;
+import nuist.pojo.Temperature;
 
 
 

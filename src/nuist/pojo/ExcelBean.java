@@ -1,4 +1,4 @@
-package cn.itheima.pojo;
+package nuist.pojo;
 
 import org.apache.poi.xssf.usermodel.XSSFCellStyle;
 

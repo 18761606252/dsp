@@ -1,10 +1,10 @@
-package cn.itheima.dao;
+package nuist.dao;
 
 import java.math.BigInteger;
 import java.util.List;
 
-import cn.itheima.pojo.QueryVo;
-import cn.itheima.pojo.Temperature;
+import nuist.pojo.QueryVo;
+import nuist.pojo.Temperature;
 
 public interface TemperatureMapper {
 		//分类查询

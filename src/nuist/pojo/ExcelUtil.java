@@ -1,4 +1,4 @@
-package cn.itheima.pojo;
+package nuist.pojo;
 
 import java.beans.IntrospectionException;
 import java.beans.PropertyDescriptor;
