@@ -1,4 +1,4 @@
-package nuist.pojo;
+package datashare.pojo;
 
 public class QueryVo {
 	public void QueryVo(){};

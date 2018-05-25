@@ -1,4 +1,4 @@
-package nuist.service;
+package datashare.service;
 
 import java.beans.IntrospectionException;
 import java.io.InputStream;
@@ -16,13 +16,13 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.sun.org.apache.xerces.internal.impl.xpath.regex.ParseException;
 
-import nuist.dao.DictMapper;
-import nuist.dao.TemperatureMapper;
-import nuist.pojo.BaseDict;
-import nuist.pojo.ExcelBean;
-import nuist.pojo.ExcelUtil;
-import nuist.pojo.QueryVo;
-import nuist.pojo.Temperature;
+import datashare.dao.DictMapper;
+import datashare.dao.TemperatureMapper;
+import datashare.pojo.BaseDict;
+import datashare.pojo.ExcelBean;
+import datashare.pojo.ExcelUtil;
+import datashare.pojo.QueryVo;
+import datashare.pojo.Temperature;
 
 
 

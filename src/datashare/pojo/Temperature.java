@@ -1,4 +1,4 @@
-package nuist.pojo;
+package datashare.pojo;
 
 import java.math.BigInteger;
 

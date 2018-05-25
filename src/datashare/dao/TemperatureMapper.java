@@ -1,10 +1,10 @@
-package nuist.dao;
+package datashare.dao;
 
 import java.math.BigInteger;
 import java.util.List;
 
-import nuist.pojo.QueryVo;
-import nuist.pojo.Temperature;
+import datashare.pojo.QueryVo;
+import datashare.pojo.Temperature;
 
 public interface TemperatureMapper {
 		//分类查询

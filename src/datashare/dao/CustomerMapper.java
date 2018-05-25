@@ -1,9 +1,9 @@
-package nuist.dao;
+package datashare.dao;
 
 import java.util.List;
 
-import nuist.pojo.Customer;
-import nuist.pojo.QueryVo;
+import datashare.pojo.Customer;
+import datashare.pojo.QueryVo;
 
 public interface CustomerMapper {
 

@@ -1,8 +1,8 @@
-package nuist.dao;
+package datashare.dao;
 
 import java.util.List;
 
-import nuist.pojo.BaseDict;
+import datashare.pojo.BaseDict;
 
 public interface DictMapper {
 

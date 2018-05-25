@@ -1,4 +1,4 @@
-package nuist.controller;
+package datashare.controller;
 
 import java.io.BufferedOutputStream;
 import java.io.IOException;
@@ -26,10 +26,10 @@ import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 
 import cn.itcast.utils.Page;
-import nuist.pojo.BaseDict;
-import nuist.pojo.QueryVo;
-import nuist.pojo.Temperature;
-import nuist.service.CustomerService;
+import datashare.pojo.BaseDict;
+import datashare.pojo.QueryVo;
+import datashare.pojo.Temperature;
+import datashare.service.CustomerService;
 
 @Controller
 @RequestMapping("/customer")
