@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="cn.itheima.dao.CustomerMapper">
+<mapper namespace="datashare.dao.CustomerMapper">
 
-	<sql id="customer_where">
+<!-- 
+<sql id="customer_where">
 		<where>
 		    <if test="custName != null and custName != ''">
 				and a.cust_name like '%${custName}%'
@@ -17,9 +18,11 @@
 				and a.cust_level=#{custLevel}
 			</if>
 		</where>
-	</sql>
+	</sql> 
+	-->
+	
 
-	<select id="findCustomerByVo" parameterType="cn.itheima.pojo.QueryVo" resultType="cn.itheima.pojo.Customer">
+	<select id="findCustomerByVo" parameterType="datashare.pojo.QueryVo" resultType="datashare.pojo.Customer">
 		select a.cust_id,a.cust_name, b.dict_item_name cust_source, c.dict_item_name cust_industry, 
 			d.dict_item_name cust_level,a.cust_phone,a.cust_mobile, a.cust_linkman, a.cust_zipcode, 
 			a.cust_address, a.cust_createtime
@@ -32,7 +35,7 @@
 		limit #{start}, #{size}
 	</select>
 	
-	<select id="findCustomerByVoCount" parameterType="cn.itheima.pojo.QueryVo" resultType="int">
+	<select id="findCustomerByVoCount" parameterType="datashare.pojo.QueryVo" resultType="int">
 		select count(*)
 		from customer a
 		left join base_dict b on a.cust_source = b.dict_id
@@ -42,11 +45,11 @@
 		<include refid="customer_where"></include>
 	</select>
 
-	<select id="findCustomerById" parameterType="long" resultType="cn.itheima.pojo.Customer">
+	<select id="findCustomerById" parameterType="long" resultType="datashare.pojo.Customer">
 		select * from customer where cust_id = #{id}
 	</select>
 	
-	<update id="updateCustomerById" parameterType="cn.itheima.pojo.Customer">
+	<update id="updateCustomerById" parameterType="datashare.pojo.Customer">
 		update customer 
 		<set>
 			<if test="cust_name!=null and cust_name!=''">

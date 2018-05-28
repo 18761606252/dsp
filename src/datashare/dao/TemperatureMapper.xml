@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="cn.itheima.dao.TemperatureMapper">
+<mapper namespace="datashare.dao.TemperatureMapper">
 	
 	<!-- 抽取where条件 -->
 	<sql id="temperature_where">
@@ -24,7 +24,7 @@
 	</sql>
 	
 	<!-- 分类查询 -->
-	<select id="findTemperatureByVo" parameterType="cn.itheima.pojo.QueryVo" resultType="cn.itheima.pojo.Temperature">
+	<select id="findTemperatureByVo" parameterType="datashare.pojo.QueryVo" resultType="datashare.pojo.Temperature">
 		SELECT t.t_id,t.station_id ,d.dict_item_name data_city,t.year_data,t.mon_data,t.day_data,b.dict_item_name data_element,c.dict_item_name data_source from t 
 		LEFT JOIN base_dict b ON t.data_element=b.dict_id
 		LEFT JOIN base_dict c ON t.data_source=c.dict_id
@@ -35,7 +35,7 @@
 	</select>
 	
 	<!-- 分页用 -->
-	<select id="findTemperatureByVoCount" parameterType="cn.itheima.pojo.QueryVo" resultType="int">
+	<select id="findTemperatureByVoCount" parameterType="datashare.pojo.QueryVo" resultType="int">
 		SELECT count(*) from t 
 		LEFT JOIN base_dict b ON t.data_element=b.dict_id
 		LEFT JOIN base_dict c ON t.data_source=c.dict_id
@@ -44,7 +44,7 @@
 	
 	</select>
 
-	<select id="findTemperatureById" parameterType="BigInteger" resultType="cn.itheima.pojo.Temperature">
+	<select id="findTemperatureById" parameterType="BigInteger" resultType="datashare.pojo.Temperature">
 		select * from t where t_id=#{id}
 	</select>
 	
@@ -64,7 +64,7 @@
     </foreach>  
 	</insert>  
 	
-	<select id="selectApartInfo" parameterType="String" resultType="cn.itheima.pojo.Temperature">
+	<select id="selectApartInfo" parameterType="String" resultType="datashare.pojo.Temperature">
 		select * from t where station_id=#{dataStation}
 	</select>
 
